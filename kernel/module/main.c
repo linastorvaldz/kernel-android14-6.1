@@ -2802,7 +2802,7 @@ static int load_module(struct load_info *info, const char __user *uargs,
 	/* Check if it's blacklisted */
 	if (blacklisted(info->name)) {
 		pr_err("Module %s is blacklisted\n", info->name);
-		err = -EPERM;
+		//err = -EPERM;
 		goto free_copy;
 	}
 
